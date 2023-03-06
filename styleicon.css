@@ -1,0 +1,363 @@
+.bordure
+ {
+    background-color: rgb(113, 111, 111);
+    height: 150px;
+    position: relative;
+}
+.trait {
+    height: 40%;
+    border-bottom: 20px dotted rgb(243, 236, 236);
+    margin: 0 4em;
+}
+.division {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.cercle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    margin-right: 1rem;
+    animation: courir 15s linear infinite;
+}
+.cercle div {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(225, 255, 0);
+}
+.demi-cercle1 {
+    top: 0;
+    border-radius: 50px 50px 0 0;
+    animation: circletop 1s linear infinite;
+}
+.demi-cercle2 {
+    bottom: 0;
+    border-radius: 0 0 50px 50px;
+    animation: circlebot 1s linear infinite;
+}
+.icon2 {
+    position: relative;
+    width: 70px;
+    height: 88px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(211, 43, 226);
+    animation: courir 15s linear infinite, couleur 1s linear infinite;
+}
+.icon2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background: linear-gradient(-45deg, rgb(113, 111, 111) 12px, transparent 0%),
+        linear-gradient(45deg, rgb(113, 111, 111) 12px, transparent 0%);
+    background-size: 24px;
+}
+.bte1 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 28px;
+    width: 28px;
+    background-color: rgb(251, 245, 245);
+    margin-top: -1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bte11 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 12px;
+    width: 12px;
+    background-color: rgb(23, 23, 218);
+    animation: tourner1 1s linear infinite;
+
+}
+
+.bte2 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 28px;
+    width: 28px;
+    background-color: rgb(246, 240, 240);
+    margin-top: -1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bte21 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 12px;
+    width: 12px;
+    background-color: rgb(233, 22, 22);
+    animation: tourner1 1s linear infinite;
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+.rond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    text-align: center;
+    margin-top: 8%;
+}
+.yx {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 280px;
+    width: 280px;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: 5px solid rgb(247, 163, 61);
+    border-radius: 50%;
+    box-shadow: 0px -50px 30px rgb(255, 140, 0) inset;
+    background-image: linear-gradient(yellow rgb(255, 140, 0));
+}
+.bouche1 {
+    width: 60px;
+    height: 10px;
+    border-radius: 22%;
+    background-color: rgba(128, 64, 0, 0.845);
+    margin-left: 7em;
+    position: relative;
+    top: -3.5em;
+}
+.yeux1 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 6em;
+    width: 6em;
+    background-color: rgb(227, 227, 238);
+    border: 1.5px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 4px 3px grey inset;
+    margin-top: -2em;
+    animation: tourner 1s linear infinite;
+}
+.yeux11 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 40px;
+    width: 40px;
+    background-color: rgb(16, 16, 17);
+    margin-top: 0.01em;
+}
+.yeux2 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 6em;
+    width: 6em;
+    background-color: rgb(237, 237, 246);
+    border: 1.5px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: -2em;
+    box-shadow: 4px 4px 3px grey inset;
+    animation: tourner 1s linear infinite;
+}
+.yeux21 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 40px;
+    width: 40px;
+    background-color: rgb(16, 16, 17);
+    margin-top: 0.01em;
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+.eye1 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 4em;
+    width: 5em;
+    border: 13px solid rgba(128, 64, 0, 0.845);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: -2em;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+.eye2 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 6em;
+    width: 6em;
+    background-color: rgb(237, 237, 246);
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: -2em;
+    box-shadow: 6px 6px 5px grey inset;
+}
+.yeuxdeux {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 40px;
+    width: 40px;
+    background-color: rgb(16, 16, 17);
+    margin-top: 1.5em;
+}
+.finyeux {
+    display: flex;
+    gap: 2.5em;
+}
+.beut1 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 3em;
+    width: 2.5em;
+    border: 1.5px solid;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 64, 0, 0.845);
+    margin-top: -2em;
+}
+.beut2 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 3em;
+    width: 2.5em;
+    border: 1.5px solid;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 64, 0, 0.845);
+    margin-top: -2em;
+}
+.dbouche {
+    margin-left: 5em;
+}
+.bouche2 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 6em;
+    width: 8em;
+    border: 30px solid rgba(128, 64, 0, 0.845);
+    border-radius: 50%;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin-top: -9em;
+}
+.rond2 {
+    height: 300px;
+    width: 300px;
+}
+.langue {
+    position: relative;
+    height: 4rem;
+    width: 3rem;
+    background-color: #FF1493;
+    left: 2.5rem;
+    top: -1rem;
+    border-radius: 0% 0% 50% 50%;
+}
+.plangue {
+    width: 0.06rem;
+    height: 2rem;
+    background-color: black;
+    position: relative;
+    top: -5rem;
+    left: 4rem;
+}
+.bouche3 {
+    clip-path: circle(50.1% at 50% 50%);
+    height: 8em;
+    width: 9em;
+    border: 7px solid rgba(128, 64, 0, 0.845);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -5rem;
+    left: 4.8rem;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+.rond3 {
+    height: 310px;
+    width: 310px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+@keyframes circletop {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-36deg);
+    }
+}
+
+@keyframes circlebot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(36deg);
+    }
+}
+
+@keyframes courir {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes tourner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+@keyframes tourner1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+
+    }
+}
+
+@keyframes couleur {
+    0% {
+        background-color: blue;
+    }
+
+    25% {
+        background-color: rgb(255, 0, 115);
+    }
+
+    75% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: rgb(255, 0, 115);
+
+
+    }
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
